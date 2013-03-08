@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ff222222"
+    >
+
+    <com.mattkula.sliderpuzzle.views.PuzzleView
+        android:id="@+id/puzzle"
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pickImage"
+        android:layout_gravity="center_horizontal"
+        android:text="Select your own image"
+        android:layout_marginTop="10dip"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/size_chooser"
+        android:layout_marginTop="5dip"
+        android:max="10"/>
+
+
+</LinearLayout>
+
